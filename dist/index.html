@@ -8,17 +8,17 @@
   <script defer src="main.js"></script>
 </head>
 <body>
-  <div class="search-date-div">
+  <div class="search-date-container">
     <div class="search-div">
-      <form name="form" id="form">
-        <label for="location">Enter location</label>
+      <form name="form" id="form" class="search-form">
+        <label for="location"></label>
         <input 
           type="text" 
           id="location"
-          placeholder="Enter Location"
+          placeholder="Search Location"
           aria-label="Enter Location"
           />
-        <button type="submit" id="submitBtn">Search</button>
+        <button type="submit" id="submitBtn"><img src="" alt="Search Icon" class="search-icon"></button>
       </form>
     </div>
     <div class="time-date-container">
@@ -36,10 +36,10 @@
     </div>
   </div>
 
-  <div class="today-weather">
+  <div class="today-weather-container">
     <div class="logo-location">
       <img src="" alt="Forecast Logo">
-      <h2 id="locationDisplay">Bataan</h2>
+      <h2 id="locationDisplay">Alabang</h2>
     </div>
     <div class="weather-details">
       <div id="temp">36&#8451;</div>
@@ -60,7 +60,7 @@
     </div>
   </div>
 
-  <div class="7-day-forecast">
+  <div class="week-forecast-container">
     <div class="daily-w">
       <p class="day">Sunday</p>
       <p class="w-desc">description</p>
