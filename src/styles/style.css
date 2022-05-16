@@ -106,7 +106,77 @@ body {
 
 .today-weather-container {
   grid-area: today;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.logo-location {
+  display: flex;
+  width: 80%;
+  border-bottom: 3px solid black;
+}
+
+.logo-location img {
+  width: 30%;
+}
+
+.loc-display {
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  font-size: 6rem;
+}
+
+.weather-details {
+  display: flex;
+  width: 80%;
+}
+
+.current-temp {
+  flex-basis: 100%;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 5.5rem;
+}
+
+.details-container {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0rem;
+  border-left: 3px solid black;
+}
+
+.detail p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* 
+<div class="today-weather-container">
+<div class="weather-details">
+  <div id="temp">36&#8451;</div>
+  <div class="details">
+    <div class="feels-like">
+      <p>Feels Like: <span>31&#8451;</span></p>
+    </div>
+    <div class="humidity">
+      <p>humidity: <span>32%</span></p>
+    </div>
+    <div class="chance-of-rain">
+      <p>Chance of Rain: <span>33%</span></p>
+    </div>
+    <div class="wind-speed">
+      <p>Wind Speed: <span>34km/h</span></p>
+    </div>
+  </div>
+</div>
+</div> */
+
 .week-forecast-container {
   grid-area: 7day;
 }
