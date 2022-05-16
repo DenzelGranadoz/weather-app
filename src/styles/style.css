@@ -20,7 +20,7 @@ body {
   display: grid;
   grid:
     'search search today today' 50vh
-    '7day 7day 7day 7day' 50vh /
+    'week week week week' 50vh /
     1fr 1fr 1fr 1fr;
 }
 
@@ -123,11 +123,21 @@ body {
   width: 30%;
 }
 
-.loc-display {
-  flex: 1;
+.loc-display-desc {
   text-align: center;
+  padding: 1rem;
+  flex: 1;
+}
+
+.loc-display {
+  font-size: 5rem;
   margin: auto;
-  font-size: 6rem;
+  border-bottom: 3px solid black;
+}
+
+.loc-desc {
+  font-size: 2.5rem;
+  margin: auto;
 }
 
 .weather-details {
@@ -156,27 +166,53 @@ body {
   font-size: 1.8rem;
 }
 
-/* 
-<div class="today-weather-container">
-<div class="weather-details">
-  <div id="temp">36&#8451;</div>
-  <div class="details">
-    <div class="feels-like">
-      <p>Feels Like: <span>31&#8451;</span></p>
-    </div>
-    <div class="humidity">
-      <p>humidity: <span>32%</span></p>
-    </div>
-    <div class="chance-of-rain">
-      <p>Chance of Rain: <span>33%</span></p>
-    </div>
-    <div class="wind-speed">
-      <p>Wind Speed: <span>34km/h</span></p>
-    </div>
-  </div>
-</div>
-</div> */
-
 .week-forecast-container {
-  grid-area: 7day;
+  grid-area: week;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  padding-top: 0;
+}
+
+.week-forecast-title h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid #000;
+  line-height: 0em;
+  margin: 10px 0 20px;
+}
+
+.week-forecast-title h2 span {
+  background: #fff;
+  padding: 0 25px;
+}
+
+.daily-forecast {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.daily-w {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+}
+
+.day {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.w-desc {
+  font-size: 1.5rem;
+}
+
+.week-temp {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
