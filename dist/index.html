@@ -38,26 +38,26 @@
 
   <div class="today-weather-container">
     <div class="logo-location">
-      <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo">
+      <img id="locLogo" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo">
       <div class="loc-display-desc">
-        <p class="loc-display">Muntinlupa</p>
-        <p class="loc-desc">Sunny</p>
+        <p id="locDisplay" class="loc-display">Muntinlupa</p>
+        <p id="locDesc" class="loc-desc">Sunny</p>
       </div>
     </div>
     <div class="weather-details">
       <div id="currentTemp" class="current-temp">36&#8451;</div>
       <div class="details-container">
         <div class="detail feels-like">
-          <p>Feels Like: <span>31&#8451;</span></p>
+          <p>Feels Like: <span id="currentFeelsLike">31&#8451;</span></p>
         </div>
         <div class="detail humidity">
-          <p>humidity: <span>32%</span></p>
+          <p>Humidity: <span id="currentHumidity">32%</span></p>
         </div>
         <div class="detail chance-of-rain">
-          <p>Chance of Rain: <span>33%</span></p>
+          <p>Chance of Rain: <span id="currentPop">33%</span></p>
         </div>
         <div class="detail wind-speed">
-          <p>Wind Speed: <span>34km/h</span></p>
+          <p>Wind Speed: <span id="currentWindSpeed">34km/h</span></p>
         </div>
       </div>
     </div>

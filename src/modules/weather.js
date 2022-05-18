@@ -1,7 +1,7 @@
 async function dailyWeather(dataWeather) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/onecall?lat=${dataWeather.coord.lat}&lon=${dataWeather.coord.lon}&exclude=hourly,minutely&units=metric&APPID=20f7632ffc2c022654e4093c6947b4f4`,
+      `http://api.openweathermap.org/data/2.5/onecall?lat=${dataWeather.latitude}&lon=${dataWeather.longtitude}&exclude=hourly,minutely&units=metric&APPID=3b64ee637f1db8b2a33aeda84b863bcf`,
       { mode: 'cors' },
     );
     if (!response.ok) {
@@ -16,6 +16,14 @@ async function dailyWeather(dataWeather) {
   }
 }
 
+function getCoords(data) {
+  const {
+    coord: { lat: latitude, lon: longtitude },
+    name: cityName,
+  } = data;
+  return { latitude, longtitude, cityName };
+}
+
 async function getWeather(location) {
   try {
     const response = await fetch(
@@ -27,7 +35,7 @@ async function getWeather(location) {
       const errorMessage = `An error has occured: ${response.status}, ${location} not found`;
       throw new Error(errorMessage);
     }
-    const weatherData = await response.json();
+    const weatherData = getCoords(await response.json());
     return weatherData;
   } catch (e) {
     alert(e);

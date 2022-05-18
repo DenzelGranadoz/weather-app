@@ -1,6 +1,8 @@
 // do all imports here?
 import './styles/style.css';
+import Icon from './assets/sirts_icon.png';
 import { getWeather, dailyWeather } from './modules/weather';
+import renderWeatherData from './modules/DOM';
 
 const locInput = document.getElementById('location');
 const locForm = document.getElementById('form');
@@ -11,10 +13,9 @@ function clearInput() {
 
 async function getLocation() {
   if (locInput.value === '') return;
-  const data = await getWeather(locInput.value);
-  console.log(data); // send this somewhere, call a function with this as a parameter?
-  const dailyData = await dailyWeather(data);
-  console.log(dailyData);
+  const locData = await getWeather(locInput.value);
+  const dailyData = await dailyWeather(locData);
+  renderWeatherData(locData, dailyData);
 }
 
 locForm.addEventListener('submit', (e) => {
@@ -22,3 +23,11 @@ locForm.addEventListener('submit', (e) => {
   getLocation();
   clearInput();
 });
+
+const searchBtn = document.querySelector('.search-icon');
+searchBtn.src = Icon;
+
+// todo tomorrow
+// add media queries
+// find a background
+// work on the remaining logic
