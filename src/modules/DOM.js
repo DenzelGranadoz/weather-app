@@ -50,8 +50,6 @@ function displayDailyForecast(data) {
   const currentDay = getDay();
   const sevenDayNumArray = getDayArray(currentDay);
   const convertedToDays = convertDays(sevenDayNumArray);
-  console.log(sevenDayNumArray);
-  console.log(convertedToDays);
 
   const forecastDiv = document.getElementById('weekForecast');
   removeAllChildNodes(forecastDiv);
@@ -93,7 +91,6 @@ function renderWeatherData(location, data) {
   locDisplay.innerHTML = location.cityName;
   displayTodayForecast(data);
   displayDailyForecast(data);
-  console.log(data);
 }
 
 export default renderWeatherData;
