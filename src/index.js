@@ -1,4 +1,3 @@
-// do all imports here?
 import './styles/style.css';
 import Icon from './assets/sirts_icon.png';
 import { getWeather, dailyWeather } from './modules/weather';
@@ -28,12 +27,8 @@ locForm.addEventListener('submit', (e) => {
 const searchBtn = document.querySelector('.search-icon');
 searchBtn.src = Icon;
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
   getLocation();
   clearInput();
   setInterval(displayTime, 1000);
 });
-
-// window.onload = function () {
-//   document.forms['form'].submit();
-// };
