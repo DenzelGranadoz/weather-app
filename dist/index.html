@@ -17,16 +17,17 @@
           id="location"
           placeholder="Search Location"
           aria-label="Enter Location"
+          value="Manila"
           />
         <button type="submit" id="submitBtn"><img src="" alt="Search Icon" class="search-icon"></button>
       </form>
     </div>
     <div class="time-date-container">
       <div class="date" id="date">
-        Wednesday, May 22
+        Loading...
       </div>
       <div class="time" id="time">
-        1:58 PM
+        
       </div>
     </div>
     <div class="credit">
@@ -38,10 +39,10 @@
 
   <div class="today-weather-container">
     <div class="logo-location">
-      <img id="locLogo" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo">
+      <img id="locLogo" src="" alt="Forecast Logo">
       <div class="loc-display-desc">
-        <p id="locDisplay" class="loc-display">Muntinlupa</p>
-        <p id="locDesc" class="loc-desc">Sunny</p>
+        <p id="locDisplay" class="loc-display"></p>
+        <p id="locDesc" class="loc-desc"></p>
       </div>
     </div>
     <div class="weather-details">
@@ -67,51 +68,7 @@
     <div class="week-forecast-title">
       <h2><span>7-Day Forecast</span></h2>
     </div>
-    <div class="daily-forecast">
-      <div class="daily-w" id="forecastDayTwo">
-        <p class="day">Monday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-      <div class="daily-w" id="forecastDayThree">
-        <p class="day">Tuesday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-      <div class="daily-w" id="forecastDayFour">
-        <p class="day">Wednesday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-      <div class="daily-w" id="forecastDayFive">
-        <p class="day">Thursday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-      <div class="daily-w" id="forecastDaySix">
-        <p class="day">Friday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-      <div class="daily-w" id="forecastDaySeven">
-        <p class="day">Saturday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-      <div class="daily-w" id="forecastDayEight">
-        <p class="day">Sunday</p>
-        <p class="w-desc">description</p>
-        <p class="week-temp">36&#8451;</p>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Forecast Logo" class="daily-w-icon">
-      </div>
-    </div>
-    
+    <div class="daily-forecast" id="weekForecast"></div>
   </div>
 </body>
 </html>

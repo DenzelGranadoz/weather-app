@@ -28,4 +28,12 @@ locForm.addEventListener('submit', (e) => {
 const searchBtn = document.querySelector('.search-icon');
 searchBtn.src = Icon;
 
-window.setInterval(displayTime, 1000);
+window.addEventListener('load', (event) => {
+  getLocation();
+  clearInput();
+  setInterval(displayTime, 1000);
+});
+
+// window.onload = function () {
+//   document.forms['form'].submit();
+// };

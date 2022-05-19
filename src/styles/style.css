@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+:root {
+  --main-color: #edc7b7;
+}
+
 *,
 *::before,
 *::after {
@@ -16,7 +20,6 @@ body {
   margin: 0;
   font-family: 'Acme', 'sans-serif';
   background-color: var(--main-color);
-  color: var(--font-color);
   display: grid;
   grid:
     'search search today today' 50vh
@@ -79,11 +82,11 @@ body {
 }
 
 .date {
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 .time {
-  font-size: 6rem;
+  font-size: 3.5rem;
 }
 
 .credit {
@@ -183,7 +186,7 @@ body {
 }
 
 .week-forecast-title h2 span {
-  background: #fff;
+  background: var(--main-color);
   padding: 0 25px;
 }
 
