@@ -219,3 +219,470 @@ body {
   margin: 0;
   margin-bottom: 1rem;
 }
+
+/* media queries */
+@media only screen and (max-width: 1500px) {
+  .search-date-container {
+    margin: 1.5rem 0;
+    padding: 1.5rem 2.5rem;
+    border-right: 3px solid black;
+  }
+
+  .search-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .date {
+    font-size: 4.5rem;
+  }
+
+  .time {
+    font-size: 3rem;
+  }
+
+  .credit {
+    font-size: 1.2rem;
+  }
+
+  .today-weather-container {
+    padding: 2.5rem;
+  }
+
+  .loc-display-desc {
+    padding: 0.8rem;
+  }
+
+  .loc-display {
+    font-size: 4rem;
+  }
+
+  .loc-desc {
+    font-size: 2rem;
+  }
+
+  .current-temp {
+    padding: 1.8rem 1.2rem;
+    font-size: 5rem;
+  }
+
+  .detail p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .daily-forecast {
+    padding: 0.8rem;
+  }
+
+  .daily-w {
+    width: 14%;
+  }
+
+  .day {
+    font-size: 2rem;
+  }
+
+  .w-desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .search-date-container {
+    padding: 2.5rem;
+  }
+
+  .search-div input[type='text'] {
+    font-size: 18px;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .date {
+    font-size: 4rem;
+  }
+
+  .time {
+    font-size: 2.5rem;
+  }
+
+  .credit {
+    font-size: 0.8rem;
+  }
+
+  .today-weather-container {
+    padding: 2rem;
+  }
+
+  .loc-display-desc {
+    padding: 0.6rem;
+  }
+
+  .loc-display {
+    font-size: 3.5rem;
+  }
+
+  .loc-desc {
+    font-size: 1.5rem;
+  }
+
+  .current-temp {
+    padding: 1.5rem 1rem;
+    font-size: 4.5rem;
+  }
+
+  .detail p {
+    font-size: 1.2rem;
+  }
+
+  .daily-forecast {
+    padding: 0.6rem;
+  }
+
+  .daily-w {
+    width: 15%;
+  }
+
+  .day {
+    font-size: 1.7rem;
+  }
+
+  .w-desc {
+    font-size: 1rem;
+  }
+
+  .week-temp {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    grid:
+      'search' auto
+      'today' auto
+      'week' auto /
+      1fr;
+  }
+
+  .search-date-container {
+    margin: 0;
+    padding: 3rem;
+    border-right: 0;
+    border-bottom: 3px solid black;
+  }
+
+  .search-div {
+    height: 2.5em;
+  }
+
+  .search-form {
+    width: 20%;
+  }
+
+  .search-div input[type='text'] {
+    font-size: 15px;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #submitBtn {
+    width: 30px;
+  }
+
+  .date {
+    font-size: 3.5rem;
+  }
+
+  .time {
+    font-size: 2rem;
+  }
+
+  .credit {
+    font-size: 1.2rem;
+  }
+
+  .today-weather-container {
+    padding: 1.5rem;
+  }
+
+  .loc-display-desc {
+    padding: 0.5rem;
+  }
+
+  .loc-display {
+    font-size: 4rem;
+  }
+
+  .loc-desc {
+    font-size: 2rem;
+  }
+
+  #locLogo {
+    height: 150px;
+    width: 150px;
+  }
+
+  .details-container {
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+  }
+
+  .detail p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .week-forecast-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .daily-forecast {
+    padding: 0.6rem;
+  }
+
+  .daily-w {
+    width: 14%;
+  }
+
+  .day {
+    font-size: 1.5rem;
+  }
+
+  .w-desc {
+    font-size: 0.8rem;
+  }
+
+  .week-temp {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-date-container {
+    margin: 0;
+    padding: 1.5rem;
+    border-right: 0;
+    border-bottom: 3px solid black;
+  }
+
+  .search-form {
+    width: 30%;
+  }
+
+  .search-div input[type='text'] {
+    font-size: 15px;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #submitBtn {
+    width: 30px;
+  }
+
+  .time-date-container {
+    padding: 1rem;
+  }
+
+  .date {
+    font-size: 3.5rem;
+  }
+
+  .time {
+    font-size: 2rem;
+  }
+
+  .credit {
+    font-size: 1rem;
+    padding: 0 3.5rem;
+  }
+
+  .today-weather-container {
+    padding: 1.2rem;
+  }
+
+  .loc-display-desc {
+    padding: 0.5rem;
+  }
+
+  .loc-display {
+    font-size: 3.5rem;
+  }
+
+  .loc-desc {
+    font-size: 2rem;
+  }
+
+  #locLogo {
+    height: 125px;
+    width: 125px;
+  }
+
+  .current-temp {
+    font-size: 4.5rem;
+  }
+
+  .details-container {
+    margin: 1rem 0rem;
+  }
+
+  .detail p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .week-forecast-title h2 {
+    font-size: 1rem;
+  }
+
+  .daily-forecast {
+    padding: 0.5rem;
+  }
+
+  .daily-w {
+    width: 15%;
+  }
+
+  .day {
+    font-size: 1.2rem;
+  }
+
+  .w-desc {
+    font-size: 0.65rem;
+  }
+
+  .week-temp {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-date-container {
+    margin: 0;
+    padding: 1.5rem;
+    border-right: 0;
+    border-bottom: 3px solid black;
+  }
+
+  .search-form {
+    width: 50%;
+  }
+
+  .search-div input[type='text'] {
+    font-size: 15px;
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #submitBtn {
+    width: 30px;
+  }
+
+  .time-date-container {
+    padding: 0.8rem;
+  }
+
+  .date {
+    font-size: 3rem;
+  }
+
+  .time {
+    font-size: 1.5rem;
+  }
+
+  .credit {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .today-weather-container {
+    padding: 1rem;
+  }
+
+  .loc-display-desc {
+    padding: 0.4rem;
+  }
+
+  .loc-display {
+    font-size: 3rem;
+  }
+
+  .loc-desc {
+    font-size: 1.8rem;
+  }
+
+  #locLogo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .current-temp {
+    font-size: 3.5rem;
+  }
+
+  .details-container {
+    margin: 1rem 0rem;
+  }
+
+  .detail p {
+    font-size: 0.9rem;
+  }
+
+  /* .week-forecast-container {
+    grid-area: week;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 0;
+  } */
+
+  .week-forecast-title h2 {
+    font-size: 1rem;
+  }
+
+  .daily-forecast {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .day {
+    font-size: 1.5rem;
+  }
+
+  .w-desc {
+    font-size: 1rem;
+  }
+
+  .week-temp {
+    font-size: 1.8rem;
+  }
+
+  .daily-w {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-top: 0.4rem;
+  }
+}
