@@ -1,4 +1,4 @@
-const setTime = () => {
+function displayTime() {
   const dateDisplay = document.getElementById('date');
   const timeDisplay = document.getElementById('time');
 
@@ -26,30 +26,19 @@ const setTime = () => {
     'Dec',
   ];
 
-  setInterval(() => {
-    const time = new Date();
-    const month = time.getMonth();
-    const date = time.getDate();
-    const day = time.getDay();
-    const hour = time.getHours();
-    const minutes = time.getMinutes();
-    const standardFormat = hour >= 13 ? hour % 12 : hour;
-    const AmPm = hour >= 12 ? 'PM' : 'PM';
+  const dateTime = new Date();
+  const mth = dateTime.getMonth();
+  const date = dateTime.getDate();
+  const day = dateTime.getDay();
+  const hrs = dateTime.getHours();
+  const min = dateTime.getMinutes();
+  const standard = hrs >= 13 ? hrs % 12 : hrs;
+  const AmPm = hrs >= 12 ? 'PM' : 'AM';
 
-    dateDisplay.innerHTML = `${days[day]}, ${months[month]} ${date}`;
-    timeDisplay.innerHTML = `${
-      standardFormat < 10 ? '0' + standardFormat : standardFormat
-    }:${minutes < 10 ? '0' + minutes : minutes} ${AmPm}`;
-  }, 1000);
-};
+  dateDisplay.innerHTML = `${days[day]}, ${months[mth]} ${date}`;
+  timeDisplay.innerHTML = `${standard < 10 ? '0' + standard : standard}:${
+    min < 10 ? '0' + min : min
+  } ${AmPm}`;
+}
 
-export default setTime;
-
-/* <div class="time-date-container">
-      <div class="date" id="date">
-        May 14, 2022
-      </div>
-      <div class="time" id="time">
-        1:58 PM
-      </div>
-    </div> */
+export default displayTime;

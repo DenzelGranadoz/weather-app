@@ -3,6 +3,7 @@ import './styles/style.css';
 import Icon from './assets/sirts_icon.png';
 import { getWeather, dailyWeather } from './modules/weather';
 import renderWeatherData from './modules/DOM';
+import displayTime from './modules/utils';
 
 const locInput = document.getElementById('location');
 const locForm = document.getElementById('form');
@@ -27,7 +28,4 @@ locForm.addEventListener('submit', (e) => {
 const searchBtn = document.querySelector('.search-icon');
 searchBtn.src = Icon;
 
-// todo tomorrow
-// add media queries
-// find a background
-// work on the remaining logic
+window.setInterval(displayTime, 1000);
