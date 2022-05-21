@@ -14,6 +14,7 @@ Mobile View: <img width="361" alt="Mobile Device Screen Size Responsive Sample" 
 * HTML
 * CSS
 * JavaScript
+* OpenWeatherMap API
 
 ## Getting Started
 
@@ -47,3 +48,4 @@ Features that can be added or improved on.
 * Better background image/color or a dynamic one(changes with AM and PM)
 * Custom alert box to warn user of an error
 * Favourite location widget section
+* Switch between metric and imperial temperature unit
