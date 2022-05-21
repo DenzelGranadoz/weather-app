@@ -1,7 +1,7 @@
 # Weather-App
 This is a simple weather app that shows weather forecast for the city or a country entered by the user. It shows the time and forecast for today's weather along with a 7-day forecast.
 
-This is a [Todo-List](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) project from [The Odin Project](https://www.theodinproject.com) curriculum with the use of vanilla JavaScript and Webpacks.
+This is a [Weather-App](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) project from [The Odin Project](https://www.theodinproject.com) curriculum with the use of vanilla JavaScript and Webpacks.
 
 Computer View: <img width="1680" alt="Full Screen Sample" src="https://user-images.githubusercontent.com/84443588/169539752-8d1b8de7-4795-43be-8362-bab4ff30a975.png">
 Tablet View: <img width="935" alt="Tablet Screen Size Responsive Sample" src="https://user-images.githubusercontent.com/84443588/169539431-77f0635d-98e4-456f-9330-a37a8be6bed7.png">
