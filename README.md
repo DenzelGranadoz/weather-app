@@ -3,9 +3,9 @@ This is a simple weather app that shows weather forecast for the city or a count
 
 This is a [Todo-List](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) project from [The Odin Project](https://www.theodinproject.com) curriculum with the use of vanilla JavaScript and Webpacks.
 
-<img width="1680" alt="Full Screen Sample" src="https://user-images.githubusercontent.com/84443588/169539752-8d1b8de7-4795-43be-8362-bab4ff30a975.png">
-<img width="935" alt="Tablet Screen Size Responsive Sample" src="https://user-images.githubusercontent.com/84443588/169539431-77f0635d-98e4-456f-9330-a37a8be6bed7.png">
-]<img width="361" alt="Mobile Device Screen Size Responsive Sample" src="https://user-images.githubusercontent.com/84443588/169539716-566f5325-9e06-4979-b9bc-2cadf8dd8626.png">
+Computer View: <img width="1680" alt="Full Screen Sample" src="https://user-images.githubusercontent.com/84443588/169539752-8d1b8de7-4795-43be-8362-bab4ff30a975.png">
+Tablet View: <img width="935" alt="Tablet Screen Size Responsive Sample" src="https://user-images.githubusercontent.com/84443588/169539431-77f0635d-98e4-456f-9330-a37a8be6bed7.png">
+Mobile View: <img width="361" alt="Mobile Device Screen Size Responsive Sample" src="https://user-images.githubusercontent.com/84443588/169539716-566f5325-9e06-4979-b9bc-2cadf8dd8626.png">
 
 ## Demo
 > - [Check me out!](https://denzelgranadoz.github.io/weather-app/)
