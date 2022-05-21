@@ -1,4 +1,4 @@
-# Todo-List
+# Weather-App
 This is a simple weather app that shows weather forecast for the city or a country entered by the user. It shows the time and forecast for today's weather along with a 7-day forecast.
 
 This is a [Todo-List](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) project from [The Odin Project](https://www.theodinproject.com) curriculum with the use of vanilla JavaScript and Webpacks.
@@ -43,6 +43,7 @@ On the homepage there are three parts:
 * 7-day Forecast .- Shows the Weather forecast of the next seven days for the location entered.
 
 ## Improvements
+Features that can be added or improved on.
 * Better background image/color or a dynamic one(changes with AM and PM)
 * Custom alert box to warn user of an error
 * Favourite location widget section
